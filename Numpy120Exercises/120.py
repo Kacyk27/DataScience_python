@@ -1,7 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Dec 21 00:26:06 2021
+import numpy as np
 
-@author: Kacper
-"""
 
+votes = np.array(['yes', 'no', 'yes', 'no', np.nan, 'yes', 'yes'])
+
+print(np.unique(votes,return_counts=True))
